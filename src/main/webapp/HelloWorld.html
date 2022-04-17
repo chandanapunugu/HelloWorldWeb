@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Hello World</title>
+<script src="HelloWorld.js"></script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>First Name : <input type="text" name="firstName" id="firstName"/></td>
+			<td>Last Name : <input type="text" name="lastName" id="lastName"/></td>
+			<td><input type="button" onclick="javascript:sayHello(document.getElementById('firstName').value,document.getElementById('lastName').value)" value="Hello" /></td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<td>Temperature :(celsius) <input type="text" name="celsius" id="celsius"/></td>
+			<td><input type="button" onclick="javascript:cToF(document.getElementById('celsius').value)" value="Convert" /></td>
+		</tr>
+		<tr>
+			<td>Temperature :(fahrenheit) <input type="text" name="fahrenheit" id="fahrenheit"/></td>
+			<td><input type="button" onclick="javascript:fToC(document.getElementById('fahrenheit').value)" value="Convert" /></td>
+		</tr>
+	</table>
+</body>
+</html>
